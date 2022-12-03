@@ -1,0 +1,7 @@
+﻿<Application x:Class="_03_Bitte_Benachichtigen.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:_03_Bitte_Benachichtigen"
+             StartupUri="/Views/MainWindow.xaml">
+    <Application.Resources />
+</Application>

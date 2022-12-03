@@ -1,0 +1,31 @@
+﻿<Window x:Class="_03_Bitte_Benachichtigen.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:ViewModels="clr-namespace:_03_Bitte_Benachichtigen.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:_03_Bitte_Benachichtigen.Views"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        Title="MainWindow"
+        Width="800"
+        Height="450"
+        mc:Ignorable="d">
+    <Window.DataContext>
+        <ViewModels:MainWindowViewModel />
+    </Window.DataContext>
+    <StackPanel>
+        <TextBox Height="35"
+                 VerticalAlignment="Top"
+                 BorderBrush="Black"
+                 BorderThickness="1"
+                 FontSize="20"
+                 Text="{Binding Firstname}" />
+        <TextBox Height="35"
+                 VerticalAlignment="Top"
+                 BorderBrush="Black"
+                 BorderThickness="1"
+                 FontSize="20"
+                 Text="{Binding Lastname}" />
+        <TextBlock Text="{Binding Fullname, Mode=OneWay}" TextWrapping="Wrap" />
+
+    </StackPanel>
+</Window>

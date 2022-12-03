@@ -1,0 +1,7 @@
+﻿<Application x:Class="_04_Command.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:_04_Command"
+             StartupUri="/Views/MainWindow.xaml">
+    <Application.Resources />
+</Application>
