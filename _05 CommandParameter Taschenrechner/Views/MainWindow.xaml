@@ -1,15 +1,16 @@
-﻿<Window
+﻿<Window x:Class="_05_CommandParameter_Taschenrechner.Views.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:ViewModels="clr-namespace:_05_CommandParameter_Taschenrechner.ViewModels"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_05_CommandParameter_Taschenrechner.Views"
-        xmlns:ViewModels="clr-namespace:_05_CommandParameter_Taschenrechner.ViewModels" 
-        x:Class="_05_CommandParameter_Taschenrechner.Views.MainWindow"
-        mc:Ignorable="d"
-        Title="Calculator" Height="450" Width="400">
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        Title="Calculator"
+        Width="400"
+        Height="450"
+        mc:Ignorable="d">
     <Window.DataContext>
-        <ViewModels:CalculatorWindowViewModel/>
+        <ViewModels:CalculatorWindowViewModel />
     </Window.DataContext>
     <Grid>
         <Grid.RowDefinitions>
@@ -30,11 +31,13 @@
         </Grid.ColumnDefinitions>
         <TextBox Grid.ColumnSpan="6"
                  Width="360"
-                 
+                 Margin="0 10 0 0"
                  HorizontalAlignment="Center"
                  VerticalAlignment="Top"
+                 BorderBrush="Black"
+                 BorderThickness="1"
                  FontSize="20"
-                 Text="{Binding CurrentValue}" BorderBrush="Black" BorderThickness="1" Margin="0,10,0,0"/>
+                 Text="{Binding CurrentValue}" />
         <Button Grid.Row="2"
                 Grid.Column="1"
                 Command="{Binding NumberCommand}"
@@ -53,7 +56,6 @@
                 CommandParameter="3"
                 Content="3"
                 FontSize="20" />
-
         <Button Grid.Row="2"
                 Grid.Column="4"
                 Command="{Binding OperatorCommand}"
@@ -102,17 +104,18 @@
                 CommandParameter="9"
                 Content="9"
                 FontSize="20" />
-        <Button Grid.Row="5"
-                Grid.Column="1"
-                Command="{Binding OperatorCommand}"
-                CommandParameter="#"
-                Content="AC"
-                FontSize="20" Background="#FFF18080" />
         <Button Grid.Row="4"
                 Grid.Column="4"
                 Command="{Binding OperatorCommand}"
                 CommandParameter="*"
                 Content="*"
+                FontSize="20" />
+        <Button Grid.Row="5"
+                Grid.Column="1"
+                Background="#FFF18080"
+                Command="{Binding ClearAllCommand}"
+                
+                Content="AC"
                 FontSize="20" />
         <Button Grid.Row="5"
                 Grid.Column="2"
@@ -133,6 +136,5 @@
                 CommandParameter="/"
                 Content="/"
                 FontSize="20" />
-
     </Grid>
 </Window>

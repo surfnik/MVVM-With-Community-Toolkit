@@ -16,19 +16,18 @@ public partial class CalculatorWindowViewModel
     string operatorToExecute;
     public CalculatorWindowViewModel()
     {
-        this.NumberCommand = new RelayCommand<string>((value) =>
+        NumberCommand = new RelayCommand<string>((value) =>
         {
             long val = long.Parse(value);
-            this.CurrentValue = this.CurrentValue * 10.0 + val;
+            CurrentValue = CurrentValue * 10.0 + val;
         });
-        this.OperatorCommand = new RelayCommand<string>(ExecuteOperation);
+        OperatorCommand = new RelayCommand<string>(ExecuteOperation); //mit CommandParameter RelayCommand mit <T>
+        ClearAllCommand = new RelayCommand(ExecuteClearAll); //ohne CommandParameter RelayCommand ohne <T>
     }
-
     void ExecuteOperation(string op)
     {
         {
-            string oper = (string)op;
-            if (oper == "=")
+            if (op == "=") //Brechnung wird ausgeführt mit dem Operator aus 'operatorToExecute'
             {
                 switch (operatorToExecute)
                 {
@@ -44,21 +43,27 @@ public partial class CalculatorWindowViewModel
                     case "/":
                         CurrentValue = lastValue / currentValue;
                         break;
-                    case "#":
-                        CurrentValue = 0.0;
-                        break;
                     default: break;
                 }
             }
-            else
+            else //Rechenbefehl wird in 'operatorToExecute' abgelegt
             {
-                this.operatorToExecute = oper;
+                this.operatorToExecute = op;
                 lastValue = CurrentValue;
                 CurrentValue = 0.0;
             }
         }
     }
+    private void ExecuteClearAll()
+    {
+        CurrentValue= 0;
+    }
+
+    // CommandBinding mit CommandParameter:
     public RelayCommand<string> NumberCommand { get; }
-    public RelayCommand<string> OperatorCommand { get; set; }
+    public RelayCommand<string> OperatorCommand { get; }
+    
+    // CommandBinding ohne CommandParameter:
+    public RelayCommand ClearAllCommand { get; }
 
 }
