@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_03 Bitte Benachichtigen", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_04 Command", "_04 Command\_04 Command.csproj", "{B0EC0B2F-BF72-401C-A5C7-94360E864D82}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_05 CommandParameter Taschenrechner", "_05 CommandParameter Taschenrechner\_05 CommandParameter Taschenrechner.csproj", "{1DE21D46-9AE5-4B0B-8205-4F8446890CA6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_05 CommandParameter Taschenrechner", "_05 CommandParameter Taschenrechner\_05 CommandParameter Taschenrechner.csproj", "{1DE21D46-9AE5-4B0B-8205-4F8446890CA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_06 ValueConverter", "_06 ValueConverter\_06 ValueConverter.csproj", "{86E4F8C7-5844-44E1-8F0A-FAF2B53A6E16}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{1DE21D46-9AE5-4B0B-8205-4F8446890CA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1DE21D46-9AE5-4B0B-8205-4F8446890CA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1DE21D46-9AE5-4B0B-8205-4F8446890CA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86E4F8C7-5844-44E1-8F0A-FAF2B53A6E16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86E4F8C7-5844-44E1-8F0A-FAF2B53A6E16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86E4F8C7-5844-44E1-8F0A-FAF2B53A6E16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86E4F8C7-5844-44E1-8F0A-FAF2B53A6E16}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

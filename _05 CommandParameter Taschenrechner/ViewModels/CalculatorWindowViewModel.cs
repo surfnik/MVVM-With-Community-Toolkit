@@ -65,5 +65,4 @@ public partial class CalculatorWindowViewModel
     
     // CommandBinding ohne CommandParameter:
     public RelayCommand ClearAllCommand { get; }
-
 }
