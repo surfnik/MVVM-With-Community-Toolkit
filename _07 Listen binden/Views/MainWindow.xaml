@@ -1,0 +1,55 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_07_Listen_binden.Views"
+        xmlns:ViewModels="clr-namespace:_07_Listen_binden.ViewModels" x:Class="_07_Listen_binden.Views.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="400" Width="600">
+    <Window.DataContext>
+        <ViewModels:MainWindowViewModel/>
+    </Window.DataContext>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width ="1*"/>
+            <ColumnDefinition Width ="1*"/>
+        </Grid.ColumnDefinitions>
+        <!--Linke Spalte-->
+        <ListBox Grid.Column="0" ItemsSource="{Binding Persons}" SelectedItem="{Binding NewPerson}"  >
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock Text="{Binding Fullname}" FontSize="14" FontWeight="Bold"/>
+                        <TextBlock Text="{Binding Department}" Margin="0,0,0,5"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <!--Rechte Spalte-->
+        <Grid Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition Width="11*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="25*"/>
+                <RowDefinition Height="25*"/>
+                <RowDefinition Height="25*"/>
+                <RowDefinition Height="25*"/>
+                <RowDefinition Height="25*"/>
+                <RowDefinition Height="300*"/>
+            </Grid.RowDefinitions>
+
+            <Label Grid.Row="0"  Grid.Column="0" Content="Firstname" VerticalAlignment="Center"/>
+            <TextBox Grid.Row="0" Grid.Column="1" Margin="0 5 5 0" Text="{Binding NewPerson.Firstname}"/>
+            <Label Grid.Row="1"  Grid.Column="0" Content="Lastname" VerticalAlignment="Center"/>
+            <TextBox Grid.Row="1" Grid.Column="1" Margin="0 5 5 0" Text="{Binding NewPerson.Lastname}"/>
+            <Label Grid.Row="2"  Grid.Column="0" Content="Departmet" VerticalAlignment="Center"/>
+            <TextBox Grid.Row="2" Grid.Column="1" Margin="0 5 5 0" Text="{Binding NewPerson.Department}"/>
+            <Button Grid.Row="3" Grid.Column="1" Content="Add Person" Margin="0 0 5 0" Command="{Binding AddPersonCommand}"/>
+
+        </Grid>
+    </Grid>
+</Window>
