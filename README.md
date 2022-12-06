@@ -6,3 +6,4 @@ Ein guter Einstieg zum CommunityToolkit ist [dieses Viedeo von Tech-Nick](https:
 
 Namensähnlichkeit ist Zufall ;-)
 
+Im Programm 07 sind auch die die Inhalte der Videos `08 CustomLayout List` und `09 Selektiertes Element` enthalten.
