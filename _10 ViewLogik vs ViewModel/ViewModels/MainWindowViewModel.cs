@@ -1,13 +1,7 @@
-﻿using _07_Listen_binden.Models;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace _07_Listen_binden.ViewModels;
-
+namespace _10_ViewLogik_vs_ViewModel.ViewModels;
 [ObservableObject]
 public partial class MainWindowViewModel
 {
@@ -20,11 +14,16 @@ public partial class MainWindowViewModel
     {
         AddPersonCommand = new RelayCommand<Person>((o) =>
         {
-            Persons.Add(NewPerson);
-            NewPerson = new Person();
+            if (string.IsNullOrWhiteSpace(NewPerson.Firstname) || string.IsNullOrWhiteSpace(NewPerson.Lastname))
+                MissingData?.Invoke(this, EventArgs.Empty);
+            else
+            {
+                Persons.Add(NewPerson);
+                NewPerson = new Person();
+            }
         });
     }
-
     public RelayCommand<Person> AddPersonCommand { get; }
 
+    public event EventHandler MissingData;
 }
