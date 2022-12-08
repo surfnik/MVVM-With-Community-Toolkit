@@ -21,10 +21,10 @@ public partial class CalculatorWindowViewModel
             long val = long.Parse(value);
             CurrentValue = CurrentValue * 10.0 + val;
         });
-        OperatorCommand = new RelayCommand<string>(ExecuteOperation); //mit CommandParameter RelayCommand mit <T>
-        ClearAllCommand = new RelayCommand(ExecuteClearAll); //ohne CommandParameter RelayCommand ohne <T>
     }
-    void ExecuteOperation(string op)
+
+    [RelayCommand]
+    public void Operator(string op)
     {
         {
             if (op == "=") //Brechnung wird ausgeführt mit dem Operator aus 'operatorToExecute'
@@ -54,15 +54,13 @@ public partial class CalculatorWindowViewModel
             }
         }
     }
-    private void ExecuteClearAll()
+
+    [RelayCommand]
+    private void ClearAll()
     {
         CurrentValue= 0;
     }
 
     // CommandBinding mit CommandParameter:
     public RelayCommand<string> NumberCommand { get; }
-    public RelayCommand<string> OperatorCommand { get; }
-    
-    // CommandBinding ohne CommandParameter:
-    public RelayCommand ClearAllCommand { get; }
 }
