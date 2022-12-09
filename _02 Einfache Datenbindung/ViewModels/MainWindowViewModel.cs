@@ -9,7 +9,7 @@ namespace _02_Einfache_Datenbindung.ViewModels
     [ObservableObject]
     public partial class MainWindowViewModel
     {
-        [ObservableProperty]
+        [ObservableProperty] //erzeugt automatisch "public string Firstname" mit Getter und Setter
         private string firstname;
         [ObservableProperty]
         private string lastname;

@@ -18,13 +18,12 @@ public partial class MainWindowViewModel
 
     public MainWindowViewModel()
     {
-        AddPersonCommand = new RelayCommand<Person>((o) =>
-        {
-            Persons.Add(NewPerson);
-            NewPerson = new Person();
-        });
+
     }
-
-    public RelayCommand<Person> AddPersonCommand { get; }
-
+    [RelayCommand]
+    private void AddPerson()
+    {
+        Persons.Add(NewPerson);
+        NewPerson= new Person();
+    }
 }

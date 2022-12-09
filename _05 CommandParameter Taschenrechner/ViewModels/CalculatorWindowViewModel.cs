@@ -11,18 +11,24 @@ namespace _05_CommandParameter_Taschenrechner.ViewModels;
 public partial class CalculatorWindowViewModel
 {
     [ObservableProperty]
+    [NotifyCanExecuteChangedFor(nameof(ClearAllCommand))] //ClearAll nur wenn CurrentValue != 0
     private double currentValue;
     double lastValue;
     string operatorToExecute;
     public CalculatorWindowViewModel()
     {
-        NumberCommand = new RelayCommand<string>((value) =>
-        {
-            long val = long.Parse(value);
-            CurrentValue = CurrentValue * 10.0 + val;
-        });
+        //alle Commands werden durch den Quellcodegenerator [RelayCommand] erzeugt. 
+        //es müssen nur noch die privaten Methoden erstellt werden. Bindung in der Vier erfolgt auf die generierten Methoden,
+        //Die Namen der generierten Methoden lauten wie die privaten Methoden + Command.
+        //Hier sind das: NumberCommand, OperatorCommand und ClearAllCommand
     }
 
+    [RelayCommand] // erzeugt automatisch "public global IRelayCommand<string> NumberCommand, auf das in der View gebunden wird
+    private void Number(string value)
+    {
+        long val = long.Parse(value);
+        CurrentValue = CurrentValue * 10.0 + val;
+    }
     [RelayCommand]
     public void Operator(string op)
     {
@@ -55,12 +61,7 @@ public partial class CalculatorWindowViewModel
         }
     }
 
-    [RelayCommand]
-    private void ClearAll()
-    {
-        CurrentValue= 0;
-    }
-
-    // CommandBinding mit CommandParameter:
-    public RelayCommand<string> NumberCommand { get; }
+    [RelayCommand(CanExecute = nameof(CanClear))] //prüfen ob ausführbar
+    private void ClearAll() => CurrentValue = 0.0;
+    public bool CanClear() => CurrentValue != 0;
 }

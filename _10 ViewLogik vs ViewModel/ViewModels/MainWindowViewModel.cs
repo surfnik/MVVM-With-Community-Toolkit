@@ -12,18 +12,19 @@ public partial class MainWindowViewModel
 
     public MainWindowViewModel()
     {
-        AddPersonCommand = new RelayCommand<Person>((o) =>
-        {
-            if (string.IsNullOrWhiteSpace(NewPerson.Firstname) || string.IsNullOrWhiteSpace(NewPerson.Lastname))
-                MissingData?.Invoke(this, EventArgs.Empty);
-            else
-            {
-                Persons.Add(NewPerson);
-                NewPerson = new Person();
-            }
-        });
+        
     }
-    public RelayCommand<Person> AddPersonCommand { get; }
-
+    
+    [RelayCommand]
+    private void AddPerson(Person person)
+    {
+        if (string.IsNullOrWhiteSpace(NewPerson.Firstname) || string.IsNullOrWhiteSpace(NewPerson.Lastname))
+            MissingData?.Invoke(this, EventArgs.Empty);
+        else
+        {
+            Persons.Add(NewPerson);
+            NewPerson = new Person();
+        }
+    }
     public event EventHandler MissingData;
 }

@@ -114,7 +114,6 @@
                 Grid.Column="1"
                 Background="#FFF18080"
                 Command="{Binding ClearAllCommand}"
-                
                 Content="AC"
                 FontSize="20" />
         <Button Grid.Row="5"

@@ -16,7 +16,7 @@ namespace _10_ViewLogik_vs_ViewModel.Views
 
         public void ShowError()
         {
-            MessageBox.Show("Bitte Vor- und Nachnamen eingeben.");
+            MessageBox.Show("Bitte Vor- und Nachnamen eingeben." ,"Fehler!", MessageBoxButton.OK, MessageBoxImage.Error);
         }
     }
 }
