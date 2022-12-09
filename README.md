@@ -4,6 +4,17 @@ Hier ist mein Versuch die [Tutorials von 42Entwickler](https://www.youtube.com/w
 
 Ein guter Einstieg zum CommunityToolkit ist [dieses Viedeo von Tech-Nick](https://www.youtube.com/watch?v=onYKewd9b0c&t=9s)
 
-Namensähnlichkeit ist Zufall ;-)
+Übersicht der eintelnen Teile:
 
-Im Programm 07 sind auch die die Inhalte der Videos `08 CustomLayout List` und `09 Selektiertes Element` enthalten.
+01. Model - View - Viev+lodel Theorie (kein Code)
+02. Datenbindung
+03. Benachrichtigung (ProprtyChanged)
+04. Commands und ihre Bindung
+05. CommandParameter / Taschenrechner
+06. ValueConverter
+07. Listen binden
+08. *CustomLayout List (bereits in 07 eingebaut)*
+09. *Selektiertes Element (bereits in 07 eingebaut)*
+01. View Logik vs Viev+lodel
+
+... More to come
