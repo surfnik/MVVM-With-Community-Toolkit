@@ -13,9 +13,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_05 CommandParameter Tasche
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_06 ValueConverter", "_06 ValueConverter\_06 ValueConverter.csproj", "{86E4F8C7-5844-44E1-8F0A-FAF2B53A6E16}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_07 Listen binden", "_07 Listen binden\_07 Listen binden.csproj", "{9E3B3E90-D8C4-4EA7-8043-D2D2F1D58FB2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_07 Listen binden", "_07 Listen binden\_07 Listen binden.csproj", "{9E3B3E90-D8C4-4EA7-8043-D2D2F1D58FB2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_10 ViewLogik vs ViewModel", "_10 ViewLogik vs ViewModel\_10 ViewLogik vs ViewModel.csproj", "{411F3964-95AB-4D5D-9976-18851446A5A1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_10 ViewLogik vs ViewModel", "_10 ViewLogik vs ViewModel\_10 ViewLogik vs ViewModel.csproj", "{411F3964-95AB-4D5D-9976-18851446A5A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_11 Styles", "_11 Styles\_11 Styles.csproj", "{F5FA01BF-11CE-48A4-B458-0BB1FB321BA8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{411F3964-95AB-4D5D-9976-18851446A5A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{411F3964-95AB-4D5D-9976-18851446A5A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{411F3964-95AB-4D5D-9976-18851446A5A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5FA01BF-11CE-48A4-B458-0BB1FB321BA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5FA01BF-11CE-48A4-B458-0BB1FB321BA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5FA01BF-11CE-48A4-B458-0BB1FB321BA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5FA01BF-11CE-48A4-B458-0BB1FB321BA8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
