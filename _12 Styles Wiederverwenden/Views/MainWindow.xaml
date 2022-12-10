@@ -13,18 +13,7 @@
         <ViewModels:CalculatorWindowViewModel />
     </Window.DataContext>
     <Window.Resources>
-        <Style TargetType="Button">
-            <Setter Property="FontSize" Value="20" />
-        </Style>
-        <Style x:Key="ACButton" TargetType="Button" BasedOn="{StaticResource {x:Type Button}}">
-            <Setter Property="Background" Value="#ff8082" />
-        </Style>
-        <Style x:Key="ColoredButtonBackground" TargetType="Button" BasedOn="{StaticResource {x:Type Button}}">
-            <Setter Property="Background" Value="Green" />
-        </Style>
-        <Style x:Key="ColoredButton" TargetType="Button" BasedOn="{StaticResource ColoredButtonBackground}">
-            <Setter Property="Foreground" Value="white"/>
-        </Style>
+        <ResourceDictionary Source="/Resources/MyResources.xaml" />
     </Window.Resources>
 
     <Grid>
@@ -59,10 +48,9 @@
                    ScrollViewer.CanContentScroll="True"
                    ScrollViewer.VerticalScrollBarVisibility="Auto"
                    TextWrapping="WrapWithOverflow">
-            FontSize und Farben in Window.Resource definiert<LineBreak />
-            Abgerundete Ecken in App.xaml <LineBreak />
-            Eine Übersicht:<LineBreak />
-            https://wpf-tutorial.com/de/92/styles/wpf-styles-benutzen/</TextBlock>
+            Styles eingebunden per:<LineBreak />
+            ResourceDictionary Source="/Resources/MyResources.xaml" <LineBreak />
+            </TextBlock>
         <Button Grid.Row="2"
                 Grid.Column="1"
                 Command="{Binding NumberCommand}"
@@ -82,8 +70,7 @@
                 Grid.Column="4"
                 Command="{Binding OperatorCommand}"
                 CommandParameter="+"
-                Content="+"
-                Style="{StaticResource RoundButton}" />
+                Content="+" />
         <Button Grid.Row="3"
                 Grid.Column="1"
                 Command="{Binding NumberCommand}"
@@ -103,8 +90,7 @@
                 Grid.Column="4"
                 Command="{Binding OperatorCommand}"
                 CommandParameter="-"
-                Content="-"
-                Style="{StaticResource RoundButton}" />
+                Content="-" />
         <Button Grid.Row="4"
                 Grid.Column="1"
                 Command="{Binding NumberCommand}"
@@ -124,8 +110,7 @@
                 Grid.Column="4"
                 Command="{Binding OperatorCommand}"
                 CommandParameter="*"
-                Content="*"
-                Style="{StaticResource RoundButton}" />
+                Content="*" />
         <Button Grid.Row="5"
                 Grid.Column="1"
                 Command="{Binding ClearAllCommand}"
@@ -141,12 +126,11 @@
                 Command="{Binding OperatorCommand}"
                 CommandParameter="="
                 Content="="
-                Style="{StaticResource ColoredButton}"/>
+                Style="{StaticResource ColoredButton}" />
         <Button Grid.Row="5"
                 Grid.Column="4"
                 Command="{Binding OperatorCommand}"
                 CommandParameter="/"
-                Content="/"
-                Style="{StaticResource RoundButton}" />
+                Content="/" />
     </Grid>
 </Window>

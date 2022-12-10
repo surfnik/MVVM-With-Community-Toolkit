@@ -4,6 +4,6 @@
              xmlns:local="clr-namespace:_12_Styles_Wiederverwenden"
              StartupUri="/Views/MainWindow.xaml">
     <Application.Resources>
-         
+        <!--<ResourceDictionary Source="MyResources.xaml" />-->
     </Application.Resources>
 </Application>
