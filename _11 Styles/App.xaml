@@ -5,8 +5,8 @@
              StartupUri="/Views/MainWindow.xaml">
     <Application.Resources>
         <Style x:Key="RoundButton" TargetType="Button">
-            <Setter Property="FontSize" Value="20"/>
-            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="FontSize" Value="20" />
+            <Setter Property="FontWeight" Value="Bold" />
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="Button">
