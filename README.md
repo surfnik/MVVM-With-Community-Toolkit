@@ -18,6 +18,6 @@ und [dieses hier von Kevin Bost](https://www.youtube.com/watch?v=uVIzK2snugk)
 09. *Selektiertes Element (bereits in 07 eingebaut)*
 10. View Logik vs Viev+lodel
 11. Styles
-12. Styles wiederverwnden
+12. Styles wiederverwenden
 
 ... More to come
