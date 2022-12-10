@@ -16,6 +16,8 @@ und [dieses hier von Kevin Bost](https://www.youtube.com/watch?v=uVIzK2snugk)
 07. Listen binden
 08. *CustomLayout List (bereits in 07 eingebaut)*
 09. *Selektiertes Element (bereits in 07 eingebaut)*
-01. View Logik vs Viev+lodel
+10. View Logik vs Viev+lodel
+11. Styles
+12. Styles wiederverwnden
 
 ... More to come
