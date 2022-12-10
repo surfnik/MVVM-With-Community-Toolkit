@@ -16,9 +16,14 @@
         <Style TargetType="Button">
             <Setter Property="FontSize" Value="20" />
         </Style>
-        <Style x:Key="ACButton" TargetType="Button">
-            <Setter Property="FontSize" Value="20" />
+        <Style x:Key="ACButton" TargetType="Button" BasedOn="{StaticResource {x:Type Button}}">
             <Setter Property="Background" Value="#ff8082" />
+        </Style>
+        <Style x:Key="ColoredButtonBackground" TargetType="Button" BasedOn="{StaticResource {x:Type Button}}">
+            <Setter Property="Background" Value="Green" />
+        </Style>
+        <Style x:Key="ColoredButton" TargetType="Button" BasedOn="{StaticResource ColoredButtonBackground}">
+            <Setter Property="Foreground" Value="white"/>
         </Style>
     </Window.Resources>
 
@@ -54,7 +59,7 @@
                    ScrollViewer.CanContentScroll="True"
                    ScrollViewer.VerticalScrollBarVisibility="Auto"
                    TextWrapping="WrapWithOverflow">
-            FontSize als Window.Resource definiert<LineBreak />
+            FontSize und Farben in Window.Resource definiert<LineBreak />
             Abgerundete Ecken in App.xaml <LineBreak />
             Eine Übersicht:<LineBreak />
             https://wpf-tutorial.com/de/92/styles/wpf-styles-benutzen/</TextBlock>
@@ -133,10 +138,10 @@
                 Content="0" />
         <Button Grid.Row="5"
                 Grid.Column="3"
-                Background="LightGreen"
                 Command="{Binding OperatorCommand}"
                 CommandParameter="="
-                Content="=" />
+                Content="="
+                Style="{StaticResource ColoredButton}"/>
         <Button Grid.Row="5"
                 Grid.Column="4"
                 Command="{Binding OperatorCommand}"
