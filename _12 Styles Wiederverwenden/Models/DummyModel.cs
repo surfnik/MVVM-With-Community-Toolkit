@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _11_Styles.Models
+namespace _12_Styles_Wiederverwenden.Models
 {
     [ObservableObject]
     public partial class DummyModel
