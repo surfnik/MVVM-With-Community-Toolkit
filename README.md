@@ -19,5 +19,6 @@ und [dieses hier von Kevin Bost](https://www.youtube.com/watch?v=uVIzK2snugk)
 10. View Logik vs Viev+lodel
 11. Styles
 12. Styles wiederverwenden
+13. Animationen und Styles Trigger
 
 ... More to come
