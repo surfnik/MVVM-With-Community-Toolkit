@@ -1,0 +1,33 @@
+﻿<Window x:Class="_17_CSV_Datei_Laden_im_Hintergrund.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:ViewModels="clr-namespace:_17_CSV_Datei_Laden_im_Hintergrund.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:_17_CSV_Datei_Laden_im_Hintergrund.Views"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        Title="MainWindow"
+        Width="800"
+        Height="450"
+        mc:Ignorable="d">
+    <Window.DataContext>
+        <ViewModels:MainWindowViewModel />
+    </Window.DataContext>
+    <Grid>
+        <!--  Spalten  -->
+        <!--<Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>-->
+        <!--  Zeilen  -->
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Button Grid.Row="0" Content="Load List" Command="{Binding LoadCsvCommand, Mode=OneWay}"/>
+        <ListBox Grid.Row="1" ItemsSource="{Binding Communities}" />
+        <ProgressBar Grid.Row="3" IsIndeterminate="{Binding IsLoading}"/>
+
+    </Grid>
+</Window>

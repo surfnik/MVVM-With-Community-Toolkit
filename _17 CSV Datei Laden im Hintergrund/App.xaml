@@ -1,0 +1,7 @@
+﻿<Application x:Class="_17_CSV_Datei_Laden_im_Hintergrund.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:_17_CSV_Datei_Laden_im_Hintergrund"
+             StartupUri="/Views/MainWindow.xaml">
+    <Application.Resources />
+</Application>

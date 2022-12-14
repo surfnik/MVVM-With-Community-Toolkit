@@ -30,6 +30,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Projektmappenelemente", "Pr
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_17 CSV Datei Laden im Hintergrund", "_17 CSV Datei Laden im Hintergrund\_17 CSV Datei Laden im Hintergrund.csproj", "{E71D46A3-6D97-4E8B-9020-61193F39626E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -80,6 +82,10 @@ Global
 		{7742F5EF-754C-457A-9BAB-82ABA0AF6B62}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7742F5EF-754C-457A-9BAB-82ABA0AF6B62}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7742F5EF-754C-457A-9BAB-82ABA0AF6B62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E71D46A3-6D97-4E8B-9020-61193F39626E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E71D46A3-6D97-4E8B-9020-61193F39626E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E71D46A3-6D97-4E8B-9020-61193F39626E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E71D46A3-6D97-4E8B-9020-61193F39626E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
