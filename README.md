@@ -20,5 +20,8 @@ und [dieses hier von Kevin Bost](https://www.youtube.com/watch?v=uVIzK2snugk)
 11. Styles
 12. Styles wiederverwenden
 13. Animationen und Styles Trigger
+14. Code Wiederverwenden - Linked Files vs. DLLs (kein Code)
+15. Auto vs. Stern und virtuelle Pixel (kein Code)
+16. Synchron vs. Asynchorn vs. Parallele Programmierung mit C#, WPF und MVVM
 
 ... More to come

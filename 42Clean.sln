@@ -23,7 +23,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_12 Styles Wiederverwenden"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_13 Animationen und Styles Trigger", "_13 Animationen und Styles Trigger\_13 Animationen und Styles Trigger.csproj", "{80DF7534-0CCB-4145-AA96-BC449517CADF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_16 Synchron Asynchorn Parallel", "_16 Synchron Asynchorn Parallel\_16 Synchron Asynchorn Parallel.csproj", "{7742F5EF-754C-457A-9BAB-82ABA0AF6B62}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_16 Synchron Asynchorn Parallel", "_16 Synchron Asynchorn Parallel\_16 Synchron Asynchorn Parallel.csproj", "{7742F5EF-754C-457A-9BAB-82ABA0AF6B62}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Projektmappenelemente", "Projektmappenelemente", "{3C57F36A-D764-4265-9DEF-2B0A8FAE7976}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
