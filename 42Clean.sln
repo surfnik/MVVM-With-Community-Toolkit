@@ -23,7 +23,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_12 Styles Wiederverwenden"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_13 Animationen und Styles Trigger", "_13 Animationen und Styles Trigger\_13 Animationen und Styles Trigger.csproj", "{80DF7534-0CCB-4145-AA96-BC449517CADF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_14 Dingbums", "_14 Dingbums\_14 Dingbums.csproj", "{492BFA23-61DB-4D8B-B59D-A048D4BBAB73}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_16 Synchron Asynchorn Parallel", "_16 Synchron Asynchorn Parallel\_16 Synchron Asynchorn Parallel.csproj", "{7742F5EF-754C-457A-9BAB-82ABA0AF6B62}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,10 +71,10 @@ Global
 		{80DF7534-0CCB-4145-AA96-BC449517CADF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{80DF7534-0CCB-4145-AA96-BC449517CADF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{80DF7534-0CCB-4145-AA96-BC449517CADF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{492BFA23-61DB-4D8B-B59D-A048D4BBAB73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{492BFA23-61DB-4D8B-B59D-A048D4BBAB73}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{492BFA23-61DB-4D8B-B59D-A048D4BBAB73}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{492BFA23-61DB-4D8B-B59D-A048D4BBAB73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7742F5EF-754C-457A-9BAB-82ABA0AF6B62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7742F5EF-754C-457A-9BAB-82ABA0AF6B62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7742F5EF-754C-457A-9BAB-82ABA0AF6B62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7742F5EF-754C-457A-9BAB-82ABA0AF6B62}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

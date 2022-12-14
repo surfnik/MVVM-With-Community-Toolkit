@@ -13,21 +13,16 @@
         <ViewModels:MainWindowViewModel />
     </Window.DataContext>
     <Grid>
-        <!--  Spalten  -->
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition />
-            <ColumnDefinition />
-        </Grid.ColumnDefinitions>
-        <!--  Zeilen  -->
         <Grid.RowDefinitions>
-            <RowDefinition />
-            <RowDefinition />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-        <Label Grid.Row="0"
-               Grid.Column="0"
-               Height="35"
-               VerticalAlignment="Top"
-               Content="{Binding DummyText}"
-               FontSize="20" />
+        <Button Grid.Row="0" Content="Download Sync" Margin="10" Command="{Binding DownloadCommand, Mode=OneWay}"/>
+        <Button Grid.Row="1" Content="Download Async" Margin="10" Command="{Binding DownloadAsynCommand, Mode=OneWay}"/>
+        <Button Grid.Row="2" Content="Download Async in Parallel" Margin="10" Command="{Binding DownloadParallelCommand, Mode=OneWay}"/>
+
+        <TextBox Grid.Row="3" Text="{Binding InfoText}"/>
     </Grid>
 </Window>
