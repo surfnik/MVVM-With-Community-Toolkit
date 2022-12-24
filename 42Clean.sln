@@ -32,7 +32,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Projektmappenelemente", "Pr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_17 CSV Datei Laden im Hintergrund", "_17 CSV Datei Laden im Hintergrund\_17 CSV Datei Laden im Hintergrund.csproj", "{E71D46A3-6D97-4E8B-9020-61193F39626E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_18 Animationen", "_18 Animationen\_18 Animationen.csproj", "{B34C2D2D-6EF8-40BB-A333-2E0ACC08E561}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_18 Animationen", "_18 Animationen\_18 Animationen.csproj", "{B34C2D2D-6EF8-40BB-A333-2E0ACC08E561}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_19 Listen Filtern_Suchfunktion", "_19 Listen Filtern_Suchfunktion\_19 Listen Filtern_Suchfunktion.csproj", "{2ACD59A0-080A-4D09-90E1-0D4265E8951C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -92,6 +94,10 @@ Global
 		{B34C2D2D-6EF8-40BB-A333-2E0ACC08E561}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B34C2D2D-6EF8-40BB-A333-2E0ACC08E561}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B34C2D2D-6EF8-40BB-A333-2E0ACC08E561}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2ACD59A0-080A-4D09-90E1-0D4265E8951C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2ACD59A0-080A-4D09-90E1-0D4265E8951C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2ACD59A0-080A-4D09-90E1-0D4265E8951C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2ACD59A0-080A-4D09-90E1-0D4265E8951C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

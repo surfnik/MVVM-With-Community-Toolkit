@@ -1,0 +1,39 @@
+﻿<Window x:Class="_19_Listen_Filtern_Suchfunktion.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:ViewModels="clr-namespace:_19_Listen_Filtern_Suchfunktion.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:_19_Listen_Filtern_Suchfunktion.Views"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        Title="MainWindow"
+        Width="800"
+        Height="450"
+        mc:Ignorable="d">
+    <Window.DataContext>
+        <ViewModels:MainWindowViewModel />
+    </Window.DataContext>
+    <StackPanel>
+        <Menu Height="20">
+            <MenuItem HorizontalAlignment="Left"
+                      Click="MenuItem_Click"
+                      Header="Exit" />
+            <MenuItem HorizontalAlignment="Right"
+                      Click="MenuItem_Click_1"
+                      Header="About" />
+        </Menu>
+
+        <Button Command="{Binding AddNewPersonCommand}" Content="Add new person" />
+        <Label Content="Filter:" />
+        <TextBox Width="Auto" Text="{Binding Filter, UpdateSourceTrigger=PropertyChanged, Delay=1000}" />
+        <ListBox ItemsSource="{Binding FilteredList}" >
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <TextBlock FontWeight="Bold" Text="{Binding Fullname}" />
+                        <TextBlock Margin="0 0 0 5" Text="{Binding Job}" />
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </StackPanel>
+</Window>
