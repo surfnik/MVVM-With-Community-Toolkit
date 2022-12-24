@@ -26,5 +26,5 @@ und [dieses hier von Kevin Bost](https://www.youtube.com/watch?v=uVIzK2snugk)
 17. CSV Datei Laden im Hintergrund und IDisposable mit .net6
 18. Animationen - Double vs KeyFrame + Easing Funktionen
 19. Listen Filtern/Suchfunktion in WPF bei Tastendruck
-
+20. Ressourcen sparen - Datenbindung verzögern (ist schon in 20 eingearbeitet)
 ... More to come

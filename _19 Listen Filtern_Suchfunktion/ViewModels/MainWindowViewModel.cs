@@ -20,8 +20,7 @@ public partial class MainWindowViewModel
     
     [ObservableProperty]
     private string? filter ="";
-
-    //partial void OnFilterChanged(string? value) => DoFiltering(); // wird durch [ObservableProperty] generiert
+    partial void OnFilterChanged(string? value) => DoFiltering(); // wird durch [ObservableProperty] generiert
 
     private void DoFiltering()
     {
