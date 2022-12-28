@@ -27,4 +27,7 @@ und [dieses hier von Kevin Bost](https://www.youtube.com/watch?v=uVIzK2snugk)
 18. Animationen - Double vs KeyFrame + Easing Funktionen
 19. Listen Filtern/Suchfunktion in WPF bei Tastendruck
 20. Ressourcen sparen - Datenbindung verzögern (ist schon in 20 eingearbeitet)
+21. Arbeiten mit Fenstern
+22. Fenster im View oder im ViewModel öffnen? (kein Code)
+
 ... More to come

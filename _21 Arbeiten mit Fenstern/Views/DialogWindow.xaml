@@ -1,0 +1,67 @@
+﻿<Window x:Class="_21_Arbeiten_mit_Fenstern.Views.DialogWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:ViewModels="clr-namespace:_21_Arbeiten_mit_Fenstern.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:_21_Arbeiten_mit_Fenstern.Views"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        Title="DialogWindow"
+        Width="320"
+        Height="200"
+        ResizeMode="NoResize"
+        SizeToContent="WidthAndHeight"
+        ShowInTaskbar="False"
+        WindowStartupLocation="CenterOwner"
+        FocusManager.FocusedElement="{Binding ElementName=txtName}"
+        mc:Ignorable="d">
+    <Window.DataContext>
+        <ViewModels:DialogWindowViewModel />
+    </Window.DataContext>
+    <Grid Margin="10">
+        <Grid.Resources>
+            <Style TargetType="{x:Type Label}">
+                <Setter Property="Margin" Value="0 3 5 5"/>
+                <Setter Property="Padding" Value="0 0 0 5"/>
+                <Setter Property="HorizontalContentAlignment" Value="Right"/>
+                
+            </Style>
+            <Style TargetType="{x:Type Button}">
+                <Setter Property="Margin" Value="5 0 0 0"/>
+                <Setter Property="Width" Value="70"/>
+                <Setter Property="Height" Value="25"/>
+            </Style>
+            <Style TargetType="{x:Type TextBox}">
+                <Setter Property="Margin" Value="5 0 0 0"/>
+                <Setter Property="Width" Value="200"/>
+            </Style>
+        </Grid.Resources>
+        <!-- Spalten -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="4*"/>
+        </Grid.ColumnDefinitions>
+        <!-- Zeilen -->
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Column="0" Grid.Row="0" Content="Name:"/>
+        <TextBox x:Name="txtName" Grid.Column="1" Grid.Row="0" Text="{Binding Name}" />
+
+        <Label Grid.Column="0" Grid.Row="1" Content="E-Mail:"/>
+        <TextBox Grid.Column="1" Grid.Row="1" Text="{Binding Email}" />
+
+        <StackPanel Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Right" >
+            <Button Name="okButton" IsDefault="True" Content="OK" Command="{Binding OkClickCommand}" />
+            <Button Name="cancelButton" IsCancel="True" Content="Cancel" Command="{Binding CancelClickCommand}" />
+        </StackPanel>
+        <StackPanel Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="5" Orientation="Horizontal" HorizontalAlignment="Right" >
+            <Button x:Name="btnOk" Content="OK" Click="btnOk_Click"  />
+            <Button x:Name="btnCancel" Content="Cancel" Click="btnCancel_Click" />
+        </StackPanel>
+    </Grid>
+</Window>

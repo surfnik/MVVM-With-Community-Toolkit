@@ -25,7 +25,7 @@
         <Button Command="{Binding AddNewPersonCommand}" Content="Add new person" />
         <Label Content="Filter:" />
         <TextBox Width="Auto" Text="{Binding Filter, UpdateSourceTrigger=PropertyChanged, Delay=1000}" />
-        <ListBox ItemsSource="{Binding FilteredList}" >
+        <ListBox ItemsSource="{Binding FilteredList}">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel>
