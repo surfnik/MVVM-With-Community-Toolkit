@@ -36,7 +36,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_18 Animationen", "_18 Anim
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_19 Listen Filtern_Suchfunktion", "_19 Listen Filtern_Suchfunktion\_19 Listen Filtern_Suchfunktion.csproj", "{2ACD59A0-080A-4D09-90E1-0D4265E8951C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_21 Arbeiten mit Fenstern", "_21 Arbeiten mit Fenstern\_21 Arbeiten mit Fenstern.csproj", "{D9BFA47D-7A32-4BDB-9C6E-82AE59F65C77}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_21 Arbeiten mit Fenstern", "_21 Arbeiten mit Fenstern\_21 Arbeiten mit Fenstern.csproj", "{D9BFA47D-7A32-4BDB-9C6E-82AE59F65C77}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

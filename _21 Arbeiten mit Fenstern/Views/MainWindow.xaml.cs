@@ -40,6 +40,12 @@ namespace _21_Arbeiten_mit_Fenstern.Views
                 else
                     return (string.Empty, string.Empty);
             };
+
+            //MessageBox:
+            vm.OpenMessageBox = (title, text) =>
+            {
+                return MessageBox.Show(text, title, MessageBoxButton.YesNo, MessageBoxImage.Question, MessageBoxResult.Yes);
+            };
         }
     }
 }

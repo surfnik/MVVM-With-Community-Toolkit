@@ -29,5 +29,6 @@ und [dieses hier von Kevin Bost](https://www.youtube.com/watch?v=uVIzK2snugk)
 20. Ressourcen sparen - Datenbindung verzögern (ist schon in 20 eingearbeitet)
 21. Arbeiten mit Fenstern
 22. Fenster im View oder im ViewModel öffnen? (kein Code)
+23. MessageBoxen / Dialoge mit Rückgabewert (ist schon in der 21 eingebaut)
 
 ... More to come

@@ -8,14 +8,42 @@
         Title="MainWindow"
         Width="517"
         Height="231"
-        mc:Ignorable="d" Loaded="Window_Loaded" >
+        Loaded="Window_Loaded"
+        mc:Ignorable="d">
     <Window.DataContext>
         <ViewModels:MainWindowViewModel />
     </Window.DataContext>
     <Canvas>
-        <Button Content="Öffne Fensgter modal" VerticalAlignment="Top" Width="155" Command="{Binding OpenDialogCommand, Mode=OneWay}" Canvas.Left="56" Canvas.Top="63"/>
-        <Label Content="{Binding Name}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="144"  BorderBrush="Black" BorderThickness="1" Canvas.Left="242" Canvas.Top="67" Height="30"/>
-        <Label Content="{Binding Email}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="144" BorderBrush="Black" BorderThickness="1" Canvas.Left="242" Canvas.Top="99" Height="30" />
+        <Button Canvas.Left="56"
+                Canvas.Top="63"
+                Width="155"
+                VerticalAlignment="Top"
+                Command="{Binding OpenDialogCommand, Mode=OneWay}"
+                Content="Öffne Fensgter modal" />
+        <Button Canvas.Left="56"
+                Canvas.Top="104"
+                Width="155"
+                VerticalAlignment="Top"
+                Command="{Binding OpenMsgCommand, Mode=OneWay}"
+                Content="Öffne Messagebox" HorizontalAlignment="Center" />
+        <Label Canvas.Left="242"
+               Canvas.Top="67"
+               Width="144"
+               Height="30"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top"
+               BorderBrush="Black"
+               BorderThickness="1"
+               Content="{Binding Name}" />
+        <Label Canvas.Left="242"
+               Canvas.Top="99"
+               Width="144"
+               Height="30"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top"
+               BorderBrush="Black"
+               BorderThickness="1"
+               Content="{Binding Email}" />
 
     </Canvas>
 </Window>
