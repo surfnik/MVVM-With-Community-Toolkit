@@ -7,7 +7,7 @@ und [dieses hier von Kevin Bost](https://www.youtube.com/watch?v=uVIzK2snugk)
 
 Übersicht der einzelnen Teile:
 
-01. Model - View - Viev+lodel Theorie (kein Code)
+01. Model - View - Viev-Model Theorie (kein Code)
 02. Datenbindung
 03. Benachrichtigung (ProprtyChanged)
 04. Commands und ihre Bindung
