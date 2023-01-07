@@ -38,6 +38,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_19 Listen Filtern_Suchfunk
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_21 Arbeiten mit Fenstern", "_21 Arbeiten mit Fenstern\_21 Arbeiten mit Fenstern.csproj", "{D9BFA47D-7A32-4BDB-9C6E-82AE59F65C77}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_24 UserControls", "_24 UserControls\_24 UserControls.csproj", "{94010457-480B-46CB-A41A-3D48951357D3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -104,6 +106,10 @@ Global
 		{D9BFA47D-7A32-4BDB-9C6E-82AE59F65C77}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D9BFA47D-7A32-4BDB-9C6E-82AE59F65C77}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D9BFA47D-7A32-4BDB-9C6E-82AE59F65C77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94010457-480B-46CB-A41A-3D48951357D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94010457-480B-46CB-A41A-3D48951357D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94010457-480B-46CB-A41A-3D48951357D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94010457-480B-46CB-A41A-3D48951357D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
