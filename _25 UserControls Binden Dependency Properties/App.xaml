@@ -1,0 +1,7 @@
+﻿<Application x:Class="_25_UserControls_Binden_Dependency_Properties.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:_25_UserControls_Binden_Dependency_Properties"
+             StartupUri="/Views/MainWindow.xaml">
+    <Application.Resources />
+</Application>
