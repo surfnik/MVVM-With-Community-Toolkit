@@ -14,6 +14,7 @@
 
   <ItemGroup>
     <Folder Include="Converter\" />
+    <Folder Include="Components\" />
   </ItemGroup>
 
   <ItemGroup>

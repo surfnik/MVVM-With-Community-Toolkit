@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _24_UserControls.Models
+namespace _25_UserControls_Binden_Dependency_Properties.Models
 {
     [ObservableObject]
     public partial class DummyModel
