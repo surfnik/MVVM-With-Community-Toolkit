@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace _25_UserControls_Binden_Dependency_Properties
+namespace _24_UserControls
 {
     /// <summary>
     /// Interaction logic for App.xaml

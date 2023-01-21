@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace _25_UserControls_Binden_Dependency_Properties.Views
+namespace _24_UserControls.Views
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
