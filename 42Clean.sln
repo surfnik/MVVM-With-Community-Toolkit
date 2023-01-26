@@ -38,7 +38,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_19 Listen Filtern_Suchfunk
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_21 Arbeiten mit Fenstern", "_21 Arbeiten mit Fenstern\_21 Arbeiten mit Fenstern.csproj", "{D9BFA47D-7A32-4BDB-9C6E-82AE59F65C77}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_24 UserControls", "_24 UserControls\_24 UserControls.csproj", "{13E18673-FE4E-4FCE-90FE-65941C786079}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_24 UserControls", "_24 UserControls\_24 UserControls.csproj", "{13E18673-FE4E-4FCE-90FE-65941C786079}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_25 UserControls_Dependency_Properties", "_25 UserControls_Dependency_Properties\_25 UserControls_Dependency_Properties.csproj", "{D5B1DBF3-B300-45F8-A426-74962E52D021}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -110,6 +112,10 @@ Global
 		{13E18673-FE4E-4FCE-90FE-65941C786079}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{13E18673-FE4E-4FCE-90FE-65941C786079}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{13E18673-FE4E-4FCE-90FE-65941C786079}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5B1DBF3-B300-45F8-A426-74962E52D021}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5B1DBF3-B300-45F8-A426-74962E52D021}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5B1DBF3-B300-45F8-A426-74962E52D021}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5B1DBF3-B300-45F8-A426-74962E52D021}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
