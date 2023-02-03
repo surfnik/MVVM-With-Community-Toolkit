@@ -32,5 +32,6 @@ und [dieses hier von Kevin Bost](https://www.youtube.com/watch?v=uVIzK2snugk)
 23. MessageBoxen / Dialoge mit Rückgabewert (ist schon in der 21 eingebaut)
 24. UserControls
 25 UserControls Dependency Properties (irgendwas ist bei mir mit dem Binding falsch 🙁. Felersuche erstmal vertagt.)
+26 WPF Value Converter - Deep Dive
 
 ... More to come
