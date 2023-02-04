@@ -31,7 +31,8 @@ und [dieses hier von Kevin Bost](https://www.youtube.com/watch?v=uVIzK2snugk)
 22. Fenster im View oder im ViewModel öffnen? (kein Code)
 23. MessageBoxen / Dialoge mit Rückgabewert (ist schon in der 21 eingebaut)
 24. UserControls
-25 UserControls Dependency Properties (irgendwas ist bei mir mit dem Binding falsch 🙁. Felersuche erstmal vertagt.)
-26 WPF Value Converter - Deep Dive
+25. UserControls Dependency Properties (irgendwas ist bei mir mit dem Binding falsch 🙁. Felersuche erstmal vertagt.)
+26. WPF Value Converter - Deep Dive
+27. WPF - DataGrid
 
 ... More to come
