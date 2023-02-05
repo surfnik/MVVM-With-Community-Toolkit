@@ -1,12 +1,4 @@
-﻿using CommunityToolkit.Mvvm.Input;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.AccessControl;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace _05_CommandParameter_Taschenrechner.ViewModels;
+﻿namespace _05_CommandParameter_Taschenrechner.ViewModels;
 [ObservableObject]
 public partial class CalculatorWindowViewModel
 {
@@ -18,7 +10,7 @@ public partial class CalculatorWindowViewModel
     public CalculatorWindowViewModel()
     {
         //alle Commands werden durch den Quellcodegenerator [RelayCommand] erzeugt. 
-        //es müssen nur noch die privaten Methoden erstellt werden. Bindung in der Vier erfolgt auf die generierten Methoden,
+        //es müssen nur noch die privaten Methoden erstellt werden. Bindung in der View erfolgt auf die generierten Methoden,
         //Die Namen der generierten Methoden lauten wie die privaten Methoden + Command.
         //Hier sind das: NumberCommand, OperatorCommand und ClearAllCommand
     }
