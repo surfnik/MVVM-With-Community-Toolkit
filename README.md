@@ -8,17 +8,25 @@ und [dieses hier von Kevin Bost](https://www.youtube.com/watch?v=uVIzK2snugk)
 Übersicht der einzelnen Teile:
 
 01. Model - View - Viev-Model Theorie (kein Code)
-02. Datenbindung
-03. Benachrichtigung (ProprtyChanged)
-04. Commands und ihre Bindung
-05. CommandParameter / Taschenrechner
+02. Datenbindung\
+*[ObservableObject] [ObservableProperty]*
+03. Benachrichtigung (ProprtyChanged)\
+*[ObservableProperty] [NotifyPropertyChangedFor(nameof(...))]*
+04. Commands und ihre Bindung\
+*[RelayCommand(CanExecute = nameof(...))]*
+05. CommandParameter / Taschenrechner\
+*CommandParameter (im XAML)*
 06. ValueConverter
-07. Listen binden
-08. *CustomLayout List (bereits in 07 eingebaut)*
-09. *Selektiertes Element (bereits in 07 eingebaut)*
-10. View Logik vs Viev+lodel
-11. Styles
-12. Styles wiederverwenden
+07. Listen binden\
+*ObservableCollection*
+08. CustomLayout List (bereits in 07 eingebaut)
+09. Selektiertes Element (bereits in 07 eingebaut)
+10. View Logik vs VievModel\
+*MessageBox im Code behind*
+11. Styles\
+*Styles in der View und in der App.xaml*
+12. Styles wiederverwenden\
+*Styles in einem ResourceDictionary*
 13. Animationen und Styles Trigger
 14. Code Wiederverwenden - Linked Files vs. DLLs (kein Code)
 15. Auto vs. Stern und virtuelle Pixel (kein Code)
