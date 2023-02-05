@@ -3,9 +3,6 @@
 [ObservableObject]
 public partial class Person
 {
-    //[ObservableProperty]
-    //private int id;
-
     public int Id { get; set; }
     public string Firstname { get; set; } = null!;
     public string Lastname { get; set; } = null!;

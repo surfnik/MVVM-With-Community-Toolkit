@@ -18,7 +18,6 @@ internal class PersonService
             new Person() {Firstname = "Chief", Lastname = "Bossinger", Email = "chief@muster.at", Id = 1, Department= mgmDep, Birthday = new DateTime(1986,9,10)}
         };
     }
-
     public Department[] GetDepartments()
     {
         return new Department[]
