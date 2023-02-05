@@ -1,0 +1,7 @@
+﻿<Application x:Class="_28_Datagrid_und_Contextmenue.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:_28_Datagrid_und_Contextmenue"
+             StartupUri="/Views/MainWindow.xaml">
+    <Application.Resources />
+</Application>

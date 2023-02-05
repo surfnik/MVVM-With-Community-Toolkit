@@ -1,4 +1,4 @@
-﻿namespace _27_WPF_DataGrid.Models;
+﻿namespace _28_Datagrid_und_Contextmenue.Models;
 
 public partial class Person
 {
@@ -9,3 +9,4 @@ public partial class Person
     public DateTime? Birthday { get; set; } = null;
     public Department Department { get; set; } = null!;
 }
+
